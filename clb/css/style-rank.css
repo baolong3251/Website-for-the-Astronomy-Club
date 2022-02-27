@@ -1,0 +1,52 @@
+body{
+        background: #1e2230;
+      }
+
+      .top{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+      }
+      .top a{
+        color: white;
+      }
+      .outside-box {
+        background: #1c1e21;
+
+        border-radius: 5px;
+        align-items: center;
+        backdrop-filter: blur(5px);
+        border: 1px solid #303030;
+        border-right: 1px solid #303030;
+        border-bottom: 1px solid #303030;
+        margin-bottom: 20px;
+      }
+      .current-rank{
+        color: lightblue; 
+        text-align: center;
+      }
+      .table{
+        margin-top: 10px;
+      }
+      .table .thead-dark th {
+        color: lightblue;
+      }
+      table th{
+        text-align: center;
+        color: #E0E0E0;
+      }
+      table td{
+        color: #E0E0E0;
+        text-align: center;
+      }
+      table td:focus{
+        color: white;
+      }
+      table td a{
+        color: #8aadb8;
+      }
+      table td a:hover{
+        color: #8aadb8;
+      }

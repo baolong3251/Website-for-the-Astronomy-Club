@@ -1,0 +1,119 @@
+html {
+            overflow-y: overlay;
+            color: white;
+        }
+        body{
+            background: #1e2230;
+            
+        }
+        a{
+            color: white;
+        }
+        h3{
+            color: #e4e6eb;
+        }
+        .upload_img{
+            color: #e4e6eb;
+        }
+        .choosing-tab a{
+            color: #b0b3b8;
+        }
+        .choosing-tab a:hover{
+            color: #b0b3b8;
+            text-decoration: underline;
+        }
+        .nav{
+        display: flex;
+        justify-content: center;
+        }
+        .nav-bar{
+          width: 100%;
+          z-index: 1000;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .home-nav-bar{
+          padding: 10px;
+          position: fixed;
+          display: flex;
+          top: 0;
+        }
+        .choosing-tab{
+            text-align: center;
+        }
+        .container{
+            /*background: #F8F8F8;*/
+            background: #1c1e21;
+            border-radius: 5px;
+            align-items: center;
+            
+            border: 1px solid #303030;
+            border-right: 1px solid #303030;
+            border-bottom: 1px solid #303030;
+            margin-bottom: 20px;
+        }
+        .sub{
+            color: #e4e6eb;
+        }
+        .sub:hover{
+            color: cyan;
+        }
+        .stmsg{
+            color: white;
+        }
+        #display-img{
+            display: flex;
+            flex-wrap: wrap;
+
+           
+        }
+        .row_img{
+            height: 250px;
+        }
+        .per_img{
+            margin-left: 10px;
+            margin-right: 15px;            
+            
+        }
+        .up-top{
+            display: flex; 
+            width: 600px; 
+            margin: auto;
+        }
+        .text{
+            margin: auto; 
+            text-align: center; 
+            display: block; 
+            width: 500px;
+        }
+        #pills-contact{
+            color: white;
+        }
+        @media only screen and (max-width: 500px) {
+            .choosing-tab{
+                max-width: 420px;
+            }
+            .up-top{
+                max-width: 350px;
+                margin: 0;
+                display: inline-block;
+            }
+            .up-top select{
+                display: inline-block;
+            }
+            .text{
+                margin: 0;
+                display: inline-block;
+                max-width: 300px;
+            }
+            .tab-content{
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+            #pills-home{
+                
+            }
+            #pills-contact{
+                
+            }
+        }  

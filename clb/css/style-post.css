@@ -1,0 +1,410 @@
+body {
+			background-color: #1f1f1f;
+		}
+		.post-container{
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;            
+        }
+        .post-title{
+        	margin-top: 5px;
+        	text-align: center;
+        	color: white;
+        }
+        .post-top{
+        	text-align: center;
+        }
+        .post-top a{
+        	padding: 5px;
+        }
+        .post-title h3{
+        	font-family: marienda;
+        }
+        .post-info{
+        	text-align: center;
+        	
+        }
+        .post-content{
+        	color: lightgrey;
+        }
+        .comment-content{
+        	border-radius: 10px;
+        	border: 2px solid pink;
+        	background: white;
+        	width: 800px;
+        	margin-left: -5px;	
+        }
+        .comment{
+        	display: flex;
+        	justify-content: right;
+        }
+        .container-edit{
+        	display: flex;
+        	justify-content: right;
+        }
+        #popup{
+			position: fixed;
+			top: -100%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1000;
+			background: black;
+			width: 650px;
+			/*padding: 80px 50px 50px;*/
+			box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+			transition: 0.5s;
+			visibility: hidden;
+		}
+		#popup.active{
+			visibility: visible;
+			top: 30%;
+		}
+		.close img{
+			max-width: 20px;
+		}
+		.close{
+			position: absolute;
+			top: 30px;
+			right: 30px;
+			cursor: pointer;
+			background-color: white;
+		}
+		.user{
+			color: blue;
+		}
+		body{
+			/*background: #DAE0E6;*/
+			background: #1e2230;
+		}
+		.container{
+			margin-top: 20px;
+			margin-left: 90px;
+			margin-right: 90px;
+			
+			border-radius: 10px;
+		}
+		.show{
+			display: flex;
+			justify-content: space-around;
+		}
+		/*---------------------------------------------LEFT-----------------------------*/
+		.show-left{
+			
+			width: 800px;
+			margin-right: 25px;
+			
+		}
+		.show-left-content{
+			
+			
+		}
+		#show-left-content a:hover{
+			text-decoration: none;
+		}
+		
+		.left-content{
+			/*background: #F8F8F8;*/
+			/*background: #DAE0E6;*/
+			background: #1c1e21;
+
+	        border-radius: 5px;
+	        align-items: center;
+	        backdrop-filter: blur(5px);
+	        border: 1px solid #303030;
+	        border-right: 1px solid #303030;
+	        border-bottom: 1px solid #303030;
+	        margin-bottom: 20px;
+		}
+		.left-content h1,h2,h3,h4,h5,p,img{
+			padding-left: 10px;
+			padding-right: 10px;
+			color: #e4e6eb;
+		}
+		
+		.left-content img{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			max-width: 780px;
+			max-height: 600px;
+			/*background: lightgrey;*/
+		}
+		.left-content-top{
+			background: #1c1e21;
+
+	        border-radius: 5px;
+	        align-items: center;
+	        backdrop-filter: blur(5px);
+	        border: 1px solid #303030;
+	        border-right: 1px solid #303030;
+	        border-bottom: 1px solid #303030;
+	        margin-bottom: 20px;
+		}
+		.left-content-top h1,h2,h3,h4,h5,p,img{
+			padding-left: 10px;
+			padding-right: 10px;
+			color: #e4e6eb;
+		}
+		.line-2{
+			display: none;
+		}
+		/*--------------------------------------------------RIGHT---------------------------*/
+		.show-right{
+			
+			width: 300px;
+
+			
+		}
+		.show-right-content{
+
+			background: #1c1e21;
+
+	        border-radius: 5px;
+	        align-items: center;
+	        backdrop-filter: blur(5px);
+	        border: 1px solid #303030;
+	        border-right: 1px solid #303030;
+	        border-bottom: 1px solid #303030;
+	        /*border: 1px solid lightgrey;
+	        border-right: 1px solid lightgrey;
+	        border-bottom: 1px solid lightgrey;*/
+			margin-bottom: 25px;
+		}
+		.right-content{
+			padding: 5px;
+
+		}
+		#avatar{
+			border-radius: 50%;
+			width: 80px;
+			height: 80px;
+			background-image: url("images/<?php echo($user_pic); ?>");
+			background-size: cover;
+			background-color: white;
+			display: block;
+			margin: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.user-post{
+			color: white;
+		}
+		.user-post:hover{
+			color: white;
+		}
+		/*---------------------------------Home - Tài khoản - Tạo bài viết-------------------*/
+		.choice{
+			display: flex;
+			
+		}
+		.choice a{
+			text-decoration: none;
+			color: #b0b3b8;
+
+		}
+		.choice a:hover{
+			text-decoration: underline;
+		}
+		/*---------------------------------Like dislike view etc...-----------------*/
+		.first{
+			display: flex;
+			margin-top: 15px;
+		}
+		.first a{
+			text-decoration: none;
+			color: lightgreen;
+		}
+		.first a:hover{
+			text-decoration: underline;
+		}
+		.post-date{
+			text-align: center;
+
+		}
+		.post-date p{
+			color: #b0b3b8;
+		}
+
+		/*-----------------------------------------Loading screen ----------------------*/
+		.loader-container{
+		    width: 100%;
+		    height: 100%;
+		    border-radius: 10px;
+		    margin: 0;
+		    padding: 0;
+		    left: 0px;
+		    top: 0px;
+		    z-index: 1000px;
+		    background-color: #1c1e21;
+		    position: fixed;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+
+		.loader{
+		    width: 50px;
+		    height: 50px;
+		    border: 5px solid;
+		    color: #3498db;
+		    border-radius: 50%;
+		    border-top-color: transparent;
+		    animation: loader 1.2s linear infinite;
+		}
+
+		@keyframes loader{
+		    25%{
+		        color: #2ecc71;
+		    }
+		    50%{
+		        color: #f1c40f;
+		    }
+		    75%{
+		        color: #e74c3c;
+		    }
+		    to{
+		        transform: rotate(360deg);
+		    }
+		}
+		.success{
+			display: none;
+		}
+		/*----------------------------------------REPORT BUTTON-----------------------------*/
+		#report .modal-content{
+			background: #1C1E21;
+		}
+		#report .modal-content .close{
+			color: white;
+		}
+		/*--------------------------------------COMMENT FILTER------------------------------*/
+		#comment_total{
+			display: flex;
+			justify-content: space-between;
+		}
+		#comment_total select{
+			margin-top: 5px;
+			border: none;
+		}
+		#comment_total select:focus{
+			outline: none;
+		}
+		/*---------------------------------------REPONSIVE----------------------------------*/
+		@media only screen and (max-width: 500px) {
+			.show{
+				margin-left: 0;
+			  	margin-right: 0;
+			}
+			.show-left{
+			  	max-width: 420px;
+			  	margin-left: 0;
+			  	margin-right: 0;
+			}
+			.show-left-content{
+				margin-left: 0;
+			  	margin-right: 0;
+			}
+			.left-content-top{
+		      	display: inline-block;
+		      	width: 420px;
+		      	margin-bottom: 10px;
+		      }
+			.show-right{
+				display: flex-end;
+				margin: auto;
+
+			}
+			.container{
+			  	margin-left: 0;
+			  	margin-right: 0;
+			}
+			.show-left img{
+				max-width: 100%;
+			    height: auto;
+			    vertical-align: middle;
+			    border: 0;
+			}	
+			.show{
+				display: inline-block;
+			}
+			.show-right-2{
+				display: none;
+			}
+			.comment-content{
+				max-width: 420px;
+				margin-left: 0;
+			  	margin-right: 0;
+			}
+			.row{
+				margin-left: 0;
+			  	margin-right: 0;
+			}
+			.modal-content{
+				max-width: 350px;
+				position: absolute;
+			}
+			#popup{
+				max-width: 350px;
+			}
+		}
+		@media only screen and (max-width: 360px) {
+			h2{
+				font-size: 20px;
+			}
+			.show{
+				margin-left: 0;
+			  	margin-right: 0;
+			}
+			.show-left{
+			  	max-width: 330px;
+			  	margin-left: 0;
+			  	margin-right: 0;
+			}
+			.show-left-content{
+				margin-left: 0;
+			  	margin-right: 0;
+			}
+
+			.left-content-top{
+		      	display: inline-block;
+		      	width: 330px;
+		      	margin-bottom: 10px;
+		      }
+			.show-right{
+				display: flex-end;
+				margin: auto;
+
+			}
+			.container{
+			  	margin-left: 0;
+			  	
+			  	
+			}
+			.show-left img{
+				max-width: 100%;
+			    height: auto;
+			    vertical-align: middle;
+			    border: 0;
+			}	
+			.show{
+				display: inline-block;
+			}
+			.show-right-2{
+				display: none;
+			}
+			.comment-content{
+				max-width: 330px;
+				margin-left: 0;
+			  	margin-right: 0;
+			}
+			.row{
+				margin-left: 0;
+			  	margin-right: 0;
+			}
+			.modal-content{
+				max-width: 350px;
+				position: absolute;
+			}
+			#popup{
+				max-width: 350px;
+			}
+		}	

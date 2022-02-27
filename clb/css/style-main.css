@@ -1,0 +1,356 @@
+/*-----------------------main-----------------------*/
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        html {
+            overflow-y: overlay;
+        }
+        body{
+            background: #111;
+            /*padding-bottom: 300px;
+            overflow-x: hidden;*/
+        }
+        body:before{
+            content: '';
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 16em;
+            font-weight: 700;
+            color: transparent;
+            -webkit-text-stroke: 1px #555;
+        }
+        body i{
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #fff,
+            0 0 80px #fff;
+            animation: animate linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                opacity: 0;
+            }
+            10%{
+                opacity: 1;
+            }
+            90%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+/*------------------------end main-------------------*/
+
+/*------------------------Header---------------------*/
+
+    .carousel-item{
+        height: 100vh;
+        min-height: 300px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+      .carousel-caption{
+          top: 25%;
+          bottom: 75%;
+      }
+      .carousel-caption h5 {
+          font-size: 45px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-top: 25px;
+          font-family: merienda;
+      }
+      .carousel-caption p {
+          width: 60%;
+          margin: auto;
+          font-size: 18px;
+          line-height: 1.9;
+          font-family: poppins;
+      }
+      .carousel-caption a {
+          text-transform: uppercase;
+          background: #262626;
+          padding: 10px 30px;
+          display: inline-block;
+          color: #fff;
+          margin-top: 15px;
+      }
+      .navbar-nav a {
+          font-family: poppins;
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: bold;
+      }
+      .navbar-light .navbar-brand {
+          color: #fff;
+          font-size: 25px;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 2px;
+      }
+      .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+          color: #fff;
+      }
+      .navbar-light .navbar-nav .nav-link {
+          color: #fff;
+      }
+      .navbar-nav {
+          text-align: center;
+      }
+      .nav-link {
+          padding: .2rem 1rem;
+      }
+      .navbar-light .navbar-brand:hover{
+          color: #00A170;
+      }
+      .nav-link.active, .nav-link:focus {
+          color: #00A170;
+      }
+      .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+          color: #00A170 !important;
+      }
+      .navbar-toggler {
+          padding: 1px 5px;
+          font-size: 18px;
+          line-height: 0.3;
+          background: #fff;
+        }
+      .w-100 {
+          height: 100vh;
+      }
+      @media only screen and (max-width: 767px) {
+      .navbar-nav.ml-auto {
+          background: rgba(0, 0, 0, 0.5);
+        }
+        
+      .navbar-nav a {
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+/*------------------------END Header---------------------*/
+
+/*------------------------ACCOUNT -----------------------*/
+
+    #accountPopup{
+      position: fixed;
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      width: 400px;
+      /*padding: 80px 50px 50px;*/
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      transition: 0.5s;
+      visibility: hidden;
+    }
+    #accountPopup.active{
+      visibility: visible;
+      top: 30%;
+    }
+    #accountPopup4{
+      position: fixed;
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      width: 500px;
+      /*padding: 80px 50px 50px;*/
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      transition: 0.5s;
+      visibility: hidden;
+    }
+    #accountPopup4.active{
+      visibility: visible;
+      top: 30%;
+    }
+
+    #accountPopup5{
+      position: fixed;
+      top: -100%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      width: 500px;
+      /*padding: 80px 50px 50px;*/
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      transition: 0.5s;
+      visibility: hidden;
+    }
+    #accountPopup5.active{
+      visibility: visible;
+      top: 50%;
+    }
+
+    #accountPopup6{
+      position: fixed;
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2000;
+      width: 500px;
+      /*padding: 80px 50px 50px;*/
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      transition: 0.5s;
+      visibility: hidden;
+    }
+    #accountPopup6.active{
+      visibility: visible;
+      top: 30%;
+    }
+
+    /*------------------------------END ACCOUNT------------------*/
+
+
+    /*-----------------------------ADMIN-------------------------*/
+      
+      #admin_post_delete{
+        position: fixed;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        background: black;
+        width: 650px;
+        /*padding: 80px 50px 50px;*/
+        box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        transition: 0.5s;
+        visibility: hidden;
+      }
+      #admin_post_delete.active{
+        visibility: visible;
+        top: 30%;
+      }
+
+    /*---------------------------END ADMIN-----------------------*/
+
+
+/*------------------------parallax--------------*/
+
+        section{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        section h2{
+            margin-left: 200px;
+            font-size: 4em;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        section .container-parallax{
+            position: relative;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        section:nth-child(even) .container-parallax{
+            flex-direction: row-reverse;
+        }
+        section .container-parallax .imgBx{
+            position: relative;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+            box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+        }
+        section .container-parallax .imgBx img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        section .container-parallax .content{
+            position: absolute;
+            right: 0;
+            margin-top: 200px;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: #333;
+            z-index: 1;
+            max-width: 400px;
+            color: #fff;
+            box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+            border-bottom: 6px solid #4ac7ff;
+        }
+        section .container-parallax .content-2{
+            position: absolute;
+            right: 0;
+            margin-top: 200px;
+            margin-bottom: 40px;
+            padding: 40px;
+            background: #333;
+            z-index: 1;
+            max-width: 100%;
+            color: #fff;
+            box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+            border-bottom: 6px solid #4ac7ff;
+        }
+        section .container-parallax .content-3{
+            position: absolute;
+            right: 0;
+            margin-top: 200px;
+            margin-bottom: 40px;
+            /*padding: 40px;*/
+            background: #333;
+            z-index: 1;
+            max-width: 100%;
+            color: #fff;
+            box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+            border-bottom: 6px solid #4ac7ff;
+        }
+        section:nth-child(even) .container-parallax .content .content-2 .content-3{
+            left: 0;
+        }
+
+/*------------------------end parallax--------------*/
+
+/*---------------------------------------POSTS---------------------------------------*/
+        .post-container{
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;            
+        }
+/*---------------------------------------END POSTS---------------------------------------*/
+
+
+/*---------------------------------------CONTENT---------------------------------------*/
+
+      .content-top a{
+        color: lightgrey;
+        padding: 10px;
+      }
+      .all-content{
+        display: flex;
+        justify-content: center;
+      }
+      .content-post{
+        padding-bottom: 10px;
+        width: 500px;
+      }
+      .content-post p{
+        color: #00FF7F;
+        text-transform: uppercase;
+      }
+      .content-post a{
+        color: #DDA0DD;
+        font-family: sans-serif;
+      }
+/*--------------------------------------------END CONTENT-----------------------*/
